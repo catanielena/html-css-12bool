@@ -6,21 +6,22 @@
 }
 
 /* debug */
-.debug.container, .debug.container-fluid{
-    background-color: green;   
+.debug [class*="col-"] {
+    min-height: 40px;
+    padding: 10px;  
 }
 
-.debug [class*="col-"] {
-    min-height: 50px;
-    border: 1px solid white; 
+.debug .row > [class*="col-"] {
+    border: 1px solid white;
+    background-color: green; 
+}
+
+.debug .row .nested {
+    background-color: darkorchid;
+    border: 1px solid green;
 }
 
 /* framework */
-.container {
-    max-width: 1200px;
-    margin: 0;
-}
-
 .container-fluid{
     width: 100%;
     margin: 0;
@@ -32,6 +33,11 @@
 }
 
 /* columns */
+.col-xs{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
 .col-xs-1 {
     flex-basis: calc((100% / 12) * 1);
 }
