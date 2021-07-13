@@ -134,5 +134,10 @@ aside > .row > div{
 
     #title{
         height: 150px;
+        background-color: lightslategrey;
+    }
+
+    .bottom-nav{
+        display: none;
     }
 }
